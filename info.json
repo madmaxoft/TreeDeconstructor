@@ -1,0 +1,11 @@
+{
+	"name": "TreeDeconstructor",
+	"version": "0.0.1",
+	"factorio_version": "0.14",
+	"title": "Deconstruct trees in the selected region",
+	"author": "_MadMaXoft(o)",
+	"contact": "TreeDeconstructor@xoft.cz",
+	"homepage": "https://github.com/madmaxoft/TreeDeconstructor",
+	"description": "Adds a new tool for deconstructing only trees in the selected region; all other entities stay intact.",
+	"license": "Public domain"
+}
