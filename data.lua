@@ -13,7 +13,23 @@ data:extend(
 			selection_mode = {"deconstruct", "trees"},
 			alt_selection_mode = {"cancel-deconstruct", "trees"},
 			selection_cursor_box_type = "not-allowed",
-			alt_selection_cursor_box_type = "not-allowed"
+			alt_selection_cursor_box_type = "not-allowed",
+		},
+
+		{
+			type = "selection-tool",
+			name = "alien-artifact-deconstructor",
+			icon = "__TreeDeconstructor__/graphics/alien-artifact-deconstructor.png",
+			flags = {"goes-to-quickbar"},
+			subgroup = "tool",
+			order = "c[automated-construction]-b[alien-artifact-deconstructor]",
+			stack_size = 1,
+			selection_color = { r = 0.6, g = 0.6, b = 0 },
+			alt_selection_color = { r = 0, g = 0, b = 1 },
+			selection_mode = {"deconstruct", "trees"},
+			alt_selection_mode = {"cancel-deconstruct", "trees"},
+			selection_cursor_box_type = "not-allowed",
+			alt_selection_cursor_box_type = "not-allowed",
 		},
 
 		{
@@ -25,7 +41,19 @@ data:extend(
 				{"advanced-circuit", 1}
 			},
 			result = "tree-deconstructor",
-			enabled = false
+			enabled = false,
+		},
+
+		{
+			type = "recipe",
+			name = "alien-artifact-deconstructor",
+			energy_required = 1,
+			ingredients =
+			{
+				{"advanced-circuit", 1}
+			},
+			result = "alien-artifact-deconstructor",
+			enabled = false,
 		},
 
 		{
@@ -38,6 +66,10 @@ data:extend(
 				{
 					type = "unlock-recipe",
 					recipe = "tree-deconstructor"
+				},
+				{
+					type = "unlock-recipe",
+					recipe = "alien-artifact-deconstructor"
 				},
 			},
 			prerequisites = {"construction-robotics"},
